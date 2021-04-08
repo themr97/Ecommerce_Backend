@@ -49,7 +49,7 @@ app.use("/api", brainTreeRouter);
 app.use("/api/order", orderRouter);
 app.use("/api/customize", customizeRouter);
 
-app.use('/', (req, res) = {
+app.use('/', (req, res) => {
   res.send("Working")
 })
 
