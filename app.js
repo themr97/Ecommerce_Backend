@@ -49,6 +49,10 @@ app.use("/api", brainTreeRouter);
 app.use("/api/order", orderRouter);
 app.use("/api/customize", customizeRouter);
 
+app.use('/', (req, res) = {
+  res.send("Working")
+})
+
 // Run Server
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
